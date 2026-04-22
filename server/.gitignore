@@ -8,8 +8,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
 *.local
 
 # Environment variables
@@ -25,3 +23,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Uploads (if needed, but keep if required)
+# uploads/
