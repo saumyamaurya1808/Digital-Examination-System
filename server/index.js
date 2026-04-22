@@ -23,7 +23,7 @@ const app = express();
 const server = http.createServer(app); // 4. Server create karein
 
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://digital-examination-system.vercel.app/"],
     methods: "POST, GET, PUT, DELETE, PATCH, HEAD",
     credentials: true
 };
