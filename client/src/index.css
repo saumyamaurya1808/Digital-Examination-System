@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Watermark Styles */
+.exam-watermark-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* Crucial: Allows clicking through the watermark */
+    z-index: 9999;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    opacity: 0.05;
+    /* Adjust visibility here (0.05 to 0.1 recommended) */
+    user-select: none;
+}
+
+.watermark-item {
+    transform: rotate(-30deg);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+    padding: 50px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
