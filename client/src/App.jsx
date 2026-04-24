@@ -28,7 +28,7 @@ import { AdvancedReport } from './Pages/Admin/AdvancedReport';
 import { useEffect } from 'react';
 import { socket } from './socket';
 
-export const server_url = "https://digital-examination-system.onrender.com";
+export const server_url = "https://digital-examination-system-1.onrender.com";
 
 const App = () => {
   // socket connect for live count
